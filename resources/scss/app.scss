@@ -9,6 +9,30 @@ $fa-font-path: "../webfonts" !default;
 
 @import '~bootstrap/scss/bootstrap';
 
-h1 {
-    color: $text-color;
+body{
+    background-color: $color-bg;
 }
+header{
+    background-color: $color-primary;
+}
+
+main{
+    .danger{
+        width: 20px;
+        height: 20px;
+        background-color: $color-primary;
+        border-radius: 50%;
+    }
+    .warning{
+        width: 20px;
+        height: 20px;
+        background-color: $color-warning;
+        border-radius: 50%;
+    }
+    .deleted{
+        text-decoration: line-through;
+        color: $color-primary;
+    }
+
+}
+
