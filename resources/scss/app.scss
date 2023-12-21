@@ -10,29 +10,63 @@ $fa-font-path: "../webfonts" !default;
 @import '~bootstrap/scss/bootstrap';
 
 body{
-    background-color: $color-bg;
+    background-color: $color-dark-blue;
+    color: $color-dark;
+    font-family: $font-primary;
 }
 header{
-    background-color: $color-primary;
+    #hero{
+        background-image: url(img/bg-train.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        width: 100%;
+        h2{
+            font-size: 4rem;
+            color: $color-dark;
+            font-family: $font-title;
+            span{
+                font-family: $font-primary;
+                text-transform: none;
+
+            }
+        }
+    }
 }
 
 main{
-    .danger{
-        width: 20px;
-        height: 20px;
-        background-color: $color-primary;
-        border-radius: 50%;
-    }
-    .warning{
-        width: 20px;
-        height: 20px;
-        background-color: $color-warning;
-        border-radius: 50%;
-    }
-    .deleted{
-        text-decoration: line-through;
-        color: $color-primary;
+    .card{
+        margin-top: 60px;
+        padding: 20px;
+        .table{
+            th, td{
+                color: $color-dark-blue !important;
+
+            }
+            .danger{
+                width: 20px;
+                height: 20px;
+                background-color: $color-pink;
+                border-radius: 50%;
+            }
+            .warning{
+                width: 20px;
+                height: 20px;
+                background-color: $color-warning;
+                border-radius: 50%;
+            }
+            .deleted{
+                text-decoration: line-through;
+                color: $color-primary;
+            }
+        }
     }
 
+
+
+}
+
+footer{
+    color: white;
 }
 
